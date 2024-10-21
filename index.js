@@ -9,7 +9,7 @@ app.use(express.json());
 // Routes
 app.use("/home", home);
 app.use("/", (req, res) => {
-  res.send({ title: "root", message: "working properly" });
+  res.send({ title: "root testing", message: "root route working properly" });
 });
 
 // connection
