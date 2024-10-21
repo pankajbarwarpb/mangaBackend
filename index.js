@@ -28,6 +28,13 @@ client
     console.error("MongoDB connection error:", err);
   });
 
+app.get("/", (req, res) => {
+  res.json({
+    title: "Express testing",
+    message: "The app is working properly",
+  });
+});
+
 // Add New Manga Route
 app.post("/add-new", async (req, res) => {
   try {
